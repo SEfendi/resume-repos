@@ -1,0 +1,112 @@
+.news {
+  padding: 70px 0px 110px 0px;
+  .container {
+    // max-width: 1450px;
+    // padding: 7px 50px;
+    width: 100%;
+    @media (max-width: 541px) {
+      padding: 7px 30px;
+    }
+    .news-title {
+      p {
+        font-size: 40px;
+        color: $selected;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        @media (max-width: 541px) {
+          font-size: 28px !important;
+        }
+      }
+    }
+    .card {
+      border: 0px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      @media (max-width: 769px) {
+        margin-bottom: 20px;
+      }
+      .news-img {
+        height: 230px !important;
+        @media (max-width: 768px) {
+          height: 350px !important;
+        }
+        @media (max-width: 550px) {
+          height: 330px !important;
+        }
+        @media (max-width: 530px) {
+          height: 300px !important;
+        }
+        @media (max-width: 480px) {
+          height: 280px !important;
+        }
+        @media (max-width: 450px) {
+          height: 260px !important;
+        }
+        @media (max-width: 420px) {
+          height: 230px !important;
+        }
+        @media (max-width: 380px) {
+          height: 210px !important;
+        }
+        @media (max-width: 360px) {
+          height: 200px !important;
+        }
+        @media (max-width: 330px) {
+          height: 180px !important;
+        }
+        @media (max-width: 315px) {
+          height: 150px !important;
+        }
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-body {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 10px;
+        font-size: 17px !important;
+        @media (max-width: 380px) {
+          font-size: 16px !important;
+        }
+        @media (max-width: 340px) {
+          font-size: 15px !important;
+        }
+        @media (max-width: 310px) {
+          font-size: 13px !important;
+        }
+      }
+      .card-text {
+        color: #a8a7a7;
+        font-size: 15px !important;
+        @media (max-width: 380px) {
+          font-size: 14px !important;
+        }
+        @media (max-width: 340px) {
+          font-size: 13px !important;
+        }
+        @media (max-width: 310px) {
+          font-size: 12px !important;
+        }
+      }
+      .news-button {
+        text-transform: uppercase;
+        color: $btn-active !important;
+        span {
+          font-size: 14px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}

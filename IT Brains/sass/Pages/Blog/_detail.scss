@@ -1,0 +1,42 @@
+.blog-detail {
+  padding: 50px 0px 120px 0px;
+  .container {
+    .row {
+      .col-12 {
+        .detail-img {
+          .blog-image {
+            width: 100%;
+            height: 440px;
+            @media (max-width: 541px) {
+              height: 250px;
+            }
+            @media (max-width: 420px) {
+              height: 230px;
+            }
+            @media (max-width: 350px) {
+              height: 190px;
+            }
+            @media (max-width: 320px) {
+              height: 160px;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+        .detail {
+          padding-top: 28px;
+          .head {
+            text-align: center;
+            text-transform: uppercase;
+          }
+          .content {
+            padding-top: 28px;
+          }
+        }
+      }
+    }
+  }
+}

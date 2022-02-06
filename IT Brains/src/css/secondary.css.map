@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,MAAM,AAAC,CACL,gBAAgB,CAAE,2CAA6C,CAC/D,QAAQ,CAAE,QAAQ,CAIlB,MAAM,CAAE,WAAW,CACpB,AAPD,AAGE,MAHI,CAGJ,UAAU,AAAC,CACT,OAAO,CAAE,oBAAoB,CAC9B,AAGH,AACE,MADI,AAAA,MAAM,CACV,UAAU,AAAC,CACT,OAAO,CAAE,mBAAmB,CAC7B",
+    "sources": [
+        "../../sass/secondary.scss",
+        "../../sass/Partial/_variable.scss"
+    ],
+    "names": [],
+    "file": "secondary.css"
+}

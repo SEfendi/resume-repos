@@ -1,0 +1,15 @@
+@import "./Partial/variable";
+
+header {
+  background-image: linear-gradient(to right,#b304d6 , #1035da  );
+  position: relative;
+  .container {
+    padding: 13px 50px !important;
+  }
+  height: max-content;
+}
+header.fixed {
+  .container {
+    padding: 4px 50px !important;
+  }
+}

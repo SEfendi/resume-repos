@@ -1,0 +1,158 @@
+header {
+  background-color: transparent;
+  transition: 0.4s;
+  animation-name: fadeInUp;
+  animation-duration: 0.9s;
+  animation-delay: 0s;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: max-content;
+  z-index: 150;
+  .container {
+    max-width: 1520px;
+    padding: 7px 30px;
+    width: 100%;
+    @media (max-width: 992px) {
+      padding: 7px 14px;
+    }
+    nav {
+      z-index: 150;
+      @media (max-width: 992px) {
+        justify-content: space-between;
+        .mob-nav-btn {
+          padding: 10px;
+          cursor: pointer;
+          i {
+            color: white;
+          }
+        }
+      }
+      @media (max-width: 768px) {
+        padding: 0px !important;
+      }
+      .logo {
+        .nav-logo {
+          img {
+            height: 50px;
+            object-fit: cover;
+            @media (max-width: 768px) {
+            }
+            @media (max-width: 550px) {
+            }
+            @media (max-width: 350px) {
+            }
+          }
+        }
+      }
+      .navigation {
+        .nav-link {
+          a {
+            transition: 0.4s;
+            color: $white !important;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 15px;
+          }
+        }
+        .more-rel {
+          position: relative;
+          &:hover {
+            .more-abs {
+              display: block;
+            }
+          }
+          .more-abs {
+            position: absolute;
+            background-color: white;
+            width: 160px;
+            right: 12px;
+            top: 100%;
+            display: none;
+
+            div {
+              a {
+                padding: 6px 0px;
+                padding-left: 25px;
+                width: 100%;
+                color: gray !important;
+                transition: 0.5s;
+                font-size: 13px;
+                &:hover {
+                  background-color: rgb(234, 253, 250) !important;
+                  transition: 0.5s;
+                }
+              }
+            }
+          }
+        }
+
+        .spec-nav {
+          a {
+            background-color: $white !important;
+            color: $selected !important;
+
+            padding: 7px 14px;
+            border-radius: 20px;
+            border: 1px $selected solid;
+
+            &:hover {
+              transition: 0.4s;
+
+              color: $white !important;
+              background-color: $main-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+header.fixed {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to right,#b304d6 , #1035da  );
+  z-index: 1000000000000;
+  animation-name: fadeInDown;
+  animation-duration: 0.9s;
+  animation-delay: 0s;
+  .container {
+    padding: 4px 30px;
+    @media (max-width: 992px) {
+      padding: 7px 14px;
+    }
+    nav {
+      padding: 0px 0px !important;
+      .logo {
+        .nav-logo {
+          img {
+            height: 45px;
+          }
+        }
+      }
+      
+    }
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

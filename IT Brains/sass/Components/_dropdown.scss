@@ -1,0 +1,41 @@
+.dropdown {
+  transition: 0.4s;
+  &:hover {
+    transition: 0.4s;
+    .children {
+      display: flex !important;
+    }
+  }
+  .main {
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      transition: 0.4s;
+      color: $main-color !important;
+      .children {
+        display: flex !important;
+      }
+    }
+  }
+  .children {
+    z-index: 1;
+    display: none;
+    background-color: $white;
+    position: absolute;
+    padding: 10px 15px;
+    border-bottom: 1px solid $border;
+    border-right: 1px solid $border;
+    border-left: 1px solid $border;
+    // border-right: 1px solid #ededed;
+    .item {
+      border-bottom: 1px solid $border;
+      a {
+        transition: 0.4s;
+        &:hover {
+          color: $main-color !important;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+}

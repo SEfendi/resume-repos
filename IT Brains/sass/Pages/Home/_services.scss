@@ -1,0 +1,105 @@
+.services {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.815) 0%,
+      rgba(255, 255, 255, 0.815) 100%
+    ),
+    url(../../../src/img/certificates1.jpg);
+  background-size: cover;
+  background-position: center center;
+
+  // background-attachment: fixed;
+  width: 100%;
+  color: $white;
+  text-transform: uppercase;
+  .container {
+    .row {
+      h2 {
+        font-weight: 600 !important;
+        color: $main-color;
+        font-size: 42px;
+        @media (max-width: 570px) {
+           font-size: 32px;
+
+      }
+        @media (max-width: 414px) {
+           font-size: 28px;
+
+      }
+      @media (max-width: 375px) {
+           font-size: 28px;
+
+      }
+      }
+      p {
+        color: $main-color;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    .row {
+      .col-lg-3 {
+        .service {
+          height: 230px;
+          background-color: $white;
+          box-shadow: 0px 0px 8px #ccc;
+          border-radius: 13px;
+          position: relative;
+          margin-bottom: 50px;
+          z-index: 1;
+          color: $main-color;
+          padding: 35px 30px 35px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          transition: 0.5s ease;
+          text-transform: uppercase;
+          &:hover {
+            color: $white;
+            background-color: $main-color;
+            transition: 0.5s;
+            .footer {
+              color: $white !important;
+              transition: 0.5s;
+            }
+          }
+          //align-items: center;
+          .head {
+            font-size: 19px;
+            font-weight: 600;
+            // margin-bottom:15px ;
+          }
+          .body {
+            font-size: 14px;
+            // margin-bottom:15px ;
+            color: rgb(168, 167, 167);
+          }
+          .footer {
+            font-size: 16px;
+            font-weight: 400;
+            color: $main-color !important;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+          .icon {
+            position: absolute;
+            width: 46px;
+            height: 46px;
+            box-shadow: 0px 0px 8px #ccc;
+            left: 30px;
+            top: -23px;
+            background-color: $white;
+            border-radius: 10px;
+            text-align: center;
+            line-height: 54px;
+
+            i {
+              color: $main-color;
+              font-size: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

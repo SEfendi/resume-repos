@@ -1,0 +1,113 @@
+.reg {
+ background-repeat: no-repeat;
+ background-size: cover;
+  height: 900px;
+  @media (max-width: 415px) {
+    height: 830px;
+  }
+  .registration {
+    .registration-about {
+      margin-top: 32px;
+      background-color: white;
+      border-radius: 15px;
+      border-top: 6px solid salmon;
+      .registration-title {
+        font-size: 35px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 20px;
+        color: $main-color;
+        @media (max-width: 415px) {
+          font-size: 25px;
+        }
+      }
+      .form {
+        display: flex;
+       
+        .form-date {
+          display: flex;
+          flex-direction: column;
+          margin-right: 50px;
+          margin-left: 20px;
+          input {
+            border-radius: 100px;
+            border: 1px solid rgb(231, 230, 230);
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            
+          }
+          label {
+            color: $selected;
+          }
+        }
+        .form-time {
+          display: flex;
+          flex-direction: column;
+          input {
+            border-radius: 100px;
+            border: 1px solid rgb(231, 230, 230);
+            padding-top: 8px;
+            padding-bottom: 8px;
+            
+          }
+          label {
+            color: $selected;
+            @media (max-width: 415px) {
+              margin-left: 20px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      .form-selected {
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 50px;
+        .select-title {
+          color: $selected;
+        }
+        select {
+          width: 100%;
+          border-radius: 100px;
+          border: 1px solid rgb(231, 230, 230);
+          padding-top: 8px;
+          padding-bottom: 8px;
+         
+        }
+      }
+      .main-form {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+        margin-left: 20px;
+        margin-top: 20px;
+        input {
+          border-radius: 100px;
+          border: 1px solid rgb(231, 230, 230);
+          width: 100%;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          
+        }
+        label {
+          color: $selected;
+        }
+      }
+      .form-message {
+        input {
+          height: 100px;
+          border-radius: 25px;
+       
+        }
+      }
+      .form-button {
+        text-align: center;
+        margin-top: 20px;
+        .itBtn{
+          margin-bottom: 29px;
+        }
+      }
+    }
+  }
+}

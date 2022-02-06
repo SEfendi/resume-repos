@@ -1,0 +1,35 @@
+.section {
+  padding: 80px 0px;
+  // margin-top: 60px;
+}
+.title {
+  margin-top: 80px;
+  padding-bottom: 30px;
+  color: $main-color;
+}
+.itBtn {
+  font-size: 13px;
+  color: $white !important;
+  padding: 12px 30px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    rgb(255, 168, 27) 0%,
+    rgba(255, 90, 139, 0.986) 100%
+  );
+
+  &:hover {
+    transition: 0.5s;
+    background: $btn-hover;
+    background: linear-gradient(to bottom, $btn-hover 0%, $btn-hover 100%);
+  }
+  &:active {
+    background: $btn-active;
+  }
+  transition: 0.5s ease;
+  // &:focus {
+  //   background: $btn-active;
+  // }
+}

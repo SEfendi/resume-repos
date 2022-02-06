@@ -1,0 +1,52 @@
+.videos-detail {
+  padding: 70px 0px;
+  .container {
+    max-width: 1260px;
+    padding: 7px 50px;
+    width: 100%;
+    .video-detail-title {
+      padding-bottom: 40px;
+      .video-detail-name {
+        font-size: 40px;
+        color: $selected;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .video-detail-description {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    .card {
+      border: 0px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 10px;
+      margin-top: 15px;
+      .video-detail-img {
+        width: 100% !important;
+        height: 220px !important;
+        iframe {
+          width: 100% !important;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+#front {
+  display: none;
+}
+#helpdesk {
+  display: none;
+}
+
+@media (max-width: 540px){
+  .video-detail-name {
+    font-size: 25px !important;
+  }
+  .video-detail-description{
+    font-size: 14px !important;
+  }
+}

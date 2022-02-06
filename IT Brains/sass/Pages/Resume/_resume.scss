@@ -1,0 +1,137 @@
+.resume{
+    .resume-title{
+        width: 100%;
+        .owner-info{
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+        }
+    }
+    .resume-title-bg{
+        background-image: url(/src/img/resumebg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .resume-title-body{
+        padding: 60px 0 20px 30px;
+        
+        @media (max-width: 768px) {
+            padding: 60px 0 20px 0;
+        }
+        
+        .owner-image{
+            width: 100%;
+            .owner-image-element{
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                border-width: 3px;
+                border-style: solid;
+                border-color: white;
+                object-fit: cover;
+                @media (max-width: 550px) {
+                    width: 200px;
+                    height: 200px;
+                }
+                
+            }
+        }
+        .owner-info{
+            width: 100%;
+            height: 300px;
+            .full-name{
+                max-width: 500px;
+                line-height: 95px;
+                color: white;
+                font-size: 85px;
+                text-transform: capitalize;
+                @media (max-width: 550px) {
+                    font-size: 65px;
+                }
+                @media (max-width: 350px) {
+                    font-size: 40px;
+                }
+            }
+            .position{
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+    .resume-body{
+        .right-bg{
+            background-color: rgba(220, 220, 220, 0.748);
+            @media (min-width: 992px) {
+                margin-left: -15px;
+            }
+        }
+        .left-section, .right-section{
+            padding: 50px 0 0 0 ;
+            min-height: 200px;
+        }
+        
+        
+        .body-section{
+            margin-bottom: 50px;
+            @media (max-width: 768px) {
+                font-size: 30px;
+            }
+            
+            @media (max-width: 350px) {
+                margin-bottom: 10px;
+        
+            }
+            .bs-title{
+                color: #4c4c4c;
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            .bs-title-element{
+                text-transform: uppercase;
+                font-weight: 700;
+                @media (max-width: 350px) {
+                    letter-spacing: 2px;
+                    font-size: 15px;
+                }
+            }
+            .bs-title-element::after{
+                position: absolute;
+                content: "";
+                height: 7px;
+                background-color: #4f4f4f;
+                width: 80px;
+                bottom: 0;
+                left: 0;
+            }
+            .bs-body-element{
+                font-size: 20px;
+                
+                @media (max-width: 350px) {
+                    font-size: 15px;
+                }
+                .bs-icon{
+                    width: 50px;
+                    font-size: 25px;
+                    
+                    @media (max-width: 550px) {
+                        width: 30px;
+                        font-size: 20px;
+                    }
+                }
+            }
+            
+            .bs-body-list{
+                .bs-body-list-element{
+                    color: gray;
+                    font-size: 20px;
+                    @media (max-width: 350px) {
+                        font-size: 15px;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

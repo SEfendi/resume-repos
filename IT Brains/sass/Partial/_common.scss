@@ -1,0 +1,60 @@
+body {
+  background-color: white;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+button {
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+a {
+  text-decoration: none !important;
+  color: initial !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(255, 249, 252);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $main-color;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    width: 1200 !important;
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input {
+  padding-left: 15px !important;
+}
+select {
+  padding-left: 10px !important;
+}

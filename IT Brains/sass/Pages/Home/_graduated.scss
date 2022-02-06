@@ -1,0 +1,169 @@
+.graduated {
+  padding: 70px 0px;
+  background-color: rgb(199, 211, 214);
+  p.head{
+    padding:0px 24px;
+  }
+  .idea {
+    text-align: center;
+    color: $selected;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    @media (max-width: 541px) {
+      font-size: 29px;
+    }
+  }
+  .container {
+    .owl-graduated {
+      overflow: hidden;
+      .owl-stage-outer {
+        padding-top: 18px;
+        overflow: visible;
+        .item {
+          height: 255px;
+          position: relative;
+          .card {
+            border-radius: 10px;
+            box-shadow: rgba(99, 99, 99, 0.2) 2px 8px 8px 2px;
+            margin: 0px 10px;
+            margin-bottom: 50px;
+            padding-top: 20px;
+            height: 100%;
+            .card-about {
+              position: relative;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              padding-left: 20px;
+              margin: 0px;
+              .card-img-top {
+                width: 100%;
+                object-fit: cover;
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                margin-right: 15px;
+              }
+              .card-name {
+                .name {
+                  text-transform: uppercase;
+                  font-weight: 700;
+                  font-size: 19px;
+                  margin-bottom: 0px;
+                }
+                .field {
+                  margin-bottom: 0px;
+                  font-size: 14px;
+                }
+              }
+            }
+            .border-bottom {
+              border-bottom: 1px solid #e7794d !important;
+              width: 100%;
+            }
+          }
+          i {
+            font-size: 40px;
+            position: absolute;
+            color: #e7794d;
+            top: -8%;
+            left: 6%;
+            z-index: 999;
+          }
+        }
+      }
+      .owl-nav {
+        margin-top: 15px;
+        position: relative;
+        @media (max-width: 768px) {
+          margin-top: 50px;
+        }
+        .owl-prev {
+          position: relative;
+          cursor: pointer;
+          font-size: 40px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#ffa81b),
+            to(rgba(255, 90, 139, 0.986))
+          );
+          background: linear-gradient(
+            to bottom,
+            #ffa81b 0%,
+            rgba(255, 90, 139, 0.986) 100%
+          );
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+          &:hover {
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            background: #ffb901;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from(#ffb901),
+              to(#ffb901)
+            );
+            background: linear-gradient(to bottom, #ffb901 0%, #ffb901 100%);
+          }
+          span {
+            text-align: center;
+            top: -32%;
+            left: 33%;
+            position: absolute;
+            color: white;
+          }
+        }
+        .owl-next {
+          position: relative;
+          cursor: pointer;
+          font-size: 40px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#ffa81b),
+            to(rgba(255, 90, 139, 0.986))
+          );
+          background: linear-gradient(
+            to bottom,
+            #ffa81b 0%,
+            rgba(255, 90, 139, 0.986) 100%
+          );
+          -webkit-transition: 0.5s ease;
+          transition: 0.5s ease;
+          &:hover {
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            background: #ffb901;
+            background: -webkit-gradient(
+              linear,
+              left top,
+              left bottom,
+              from(#ffb901),
+              to(#ffb901)
+            );
+            background: linear-gradient(to bottom, #ffb901 0%, #ffb901 100%);
+          }
+          span {
+            text-align: center;
+            top: -32%;
+            left: 40%;
+            position: absolute;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

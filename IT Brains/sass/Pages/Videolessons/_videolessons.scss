@@ -1,0 +1,106 @@
+.videos {
+  padding: 70px 0px 110px 0px;
+  .container {
+    width: 100%;
+    .video-title {
+      padding-bottom: 40px;
+
+      p {
+        font-size: 40px;
+        color: $selected;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        @media (max-width: 570px) {
+          font-size: 25px;
+        }
+      }
+      .video-description {
+        color: $selected;
+        font-size: 18px;
+        font-weight: 400;
+        @media (max-width: 570px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .card {
+      border: 0px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 10px;
+      margin-top: 15px;
+      overflow: hidden;
+      .video-img {
+         height: 230px !important;
+        @media (max-width: 768px) {
+          height: 350px !important;
+        }
+        @media (max-width: 550px) {
+          height: 330px !important;
+        }
+        @media (max-width: 530px) {
+          height: 300px !important;
+        }
+        @media (max-width: 480px) {
+          height: 280px !important;
+        }
+        @media (max-width: 450px) {
+          height: 260px !important;
+        }
+        @media (max-width: 420px) {
+          height: 230px !important;
+        }
+        @media (max-width: 380px) {
+          height: 210px !important;
+        }
+        @media (max-width: 360px) {
+          height: 200px !important;
+        }
+        @media (max-width: 330px) {
+          height: 180px !important;
+        }
+        @media (max-width: 315px) {
+          height: 150px !important;
+        }
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-body {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        padding-top: 10px;
+        color: $selected;
+      }
+      .card-text {
+        color: #a8a7a7;
+      }
+      .video-button {
+        text-transform: uppercase;
+        color: $btn-active !important;
+        span {
+          font-size: 14px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .card-title {
+    font-size: 25px !important;
+  }
+  .card-text {
+    font-size: 14px !important;
+  }
+}
